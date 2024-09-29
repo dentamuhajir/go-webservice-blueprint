@@ -1,6 +1,14 @@
 
 ########### Run Application
 ->  make run
+########### Migrate
+->  Install
+    go install -tags 'mysql' github.com/golang-migrate/migrate/v4/cmd/migrate@latest
+
+->  Create Migration
+    migrate create -ext sql -dir db/migrations -seq create_users_table
+    migrate create -ext sql -dir internal/database/migrations -seq create_users_table
+
 
 ########### Database 
 ->  setup (env)
@@ -13,4 +21,6 @@
     DB_USERNAME=root
     DB_PASSWORD=
     DB_ROOT_PASSWORD=
+
+
 

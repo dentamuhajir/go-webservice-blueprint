@@ -15,7 +15,7 @@ func mustStartMySQLContainer() (func(context.Context) error, error) {
 	var (
 		dbName = "database"
 		dbPwd  = "password"
-		dbUser = "user"
+		dbUser = "root"
 	)
 
 	dbContainer, err := mysql.Run(context.Background(),
