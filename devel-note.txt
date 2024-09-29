@@ -1,0 +1,16 @@
+
+########### Run Application
+->  make run
+
+########### Database 
+->  setup (env)
+    PORT=8080
+    APP_ENV=local
+
+    DB_HOST=localhost
+    DB_PORT=3306
+    DB_DATABASE=godb
+    DB_USERNAME=root
+    DB_PASSWORD=
+    DB_ROOT_PASSWORD=
+
